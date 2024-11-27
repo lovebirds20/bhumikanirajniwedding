@@ -588,27 +588,27 @@ a {
 }
 
 .module-title {
-	padding: 0;
+	padding: 0 !important;
 	max-width: 87%;
 	margin-left: auto;
 	margin-right: auto;
-	color: #674ea7;
+	color: #674ea7 !important;
 }
 
 li {
-	list-style: none;
+	list-style: none !important;
 }
 
 .location-title {
-	color: #674ea7;
+	color: #674ea7 !important;
 }
 
 .location-time {
-	color: #874562;
+	color: #874562 !important;
 }
 
 .custom-border {
-	border-color: #58595B;
+	border-color: #58595B !important;
 }
 
 .animated {
