@@ -14,8 +14,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 </head>
 <body>
@@ -84,14 +83,14 @@
                 </div>
             </div>
         </div>
-        <!--<div class="section-padding">
+        <div class="section-padding">
             <div class="text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                <button type="button" class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
                     <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
-                </a>
+                </button>
             </div>
-        </div>-->
-     
+        </div>
+
     </div>
 
     <br />
@@ -163,19 +162,65 @@
         <span></span>
     </p>
     <div class="music">
-        <audio src="./assets/mp3/song.mp3" id="my_audio" loop="loop"></audio>
+        <!--<audio autoplay loop>
+            <source src="./assets/mp3/song.mp3" type="audio/mpeg">
+            <source src="./assets/mp3/song.mp3" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>-->
+        <audio src="./assets/mp3/song.mp3" allow="autoplay" id="my_audio" loop="loop"></audio>
     </div>
     <p class="happiness">Join us in our happiness!<br></p>
 
 
-   
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" padding-right: 17px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding" style="color: #145689; text-transform: uppercase;">Ugh... dress codes?</h3>
+                    <h5 style="font-size: 15px; color: #a43540; text-transform: uppercase; font-weight: 500; ">Ganesh Pooja and Santek <span class="time">10AM - 12PM</span></h5>
+                    <p style="color: #9bb6bf; font-size: 14px;">
+                        <strong style="color: #874562 !important;">Ethnic indian wear</strong>
+                        <br>
+                        Get ready to shine in your ethnic best! 🌟 For Ganesh Pooja and Santek, it's all about traditional vibes. Ladies, drape those 
+                        <a href="https://in.pinterest.com/search/pins/?q=gorgeous%20sarees&rs=typed">gorgeous sarees</a> , and gents, 
+                        rock your <a href="https://in.pinterest.com/search/pins/?q=beautiful%20kurtas%20or%20dhotis%20for%20man&rs=typed">kurtas or dhotis</a>. 
+                        Let’s make the celebration even more colorful and picture-perfect with our fabulous desi style!
+                    </p>
+                    <h5 style="font-size: 15px; color: #a43540; text-transform: uppercase; font-weight: 500; ">Sangeet <span class="time">7PM - 12AM</span></h5>
+                    <p style="color: #9bb6bf; font-size: 14px;">
+                        <strong style="color: #874562 !important;">Blue vs Purple Magic 💙💜</strong>
+                        <br>
+                        Let’s add a splash of color to the Sangeet! 💃✨ Girls’ side, it’s your time to dazzle in 
+                        <a href="https://in.pinterest.com/search/pins/?q=blue%20indowestern%20shades%20of%20blue%20clothes%20of%20women%20and%20men%20both&rs=typed">shades of blue – think royal, sky, 
+                        or sapphire!</a> 🌊 Boys’ side, turn heads in 
+                        <a href="https://in.pinterest.com/search/pins/?q=stunning%20shades%20of%20purple%20indowestern%20clothes%20of%20women%20and%20men%20both&rs=typed">stunning 
+                        shades of purple – from lilac to plum!</a>stunning shades of purple – from lilac to plum! 🍇 
+                        Let’s make it a night full of vibrant hues, twirling outfits, and unforgettable memories!
+                    </p>
+                    <h5 style="font-size: 15px; color: #a43540; text-transform: uppercase; font-weight: 500; ">Haldi <span class="time">10AM - 11AM</span></h5>
+                    <p style="color: #9bb6bf; font-size: 14px;">
+                        <strong style="color: #874562 !important;">Ethnic indian wear</strong>
+                        <br>
+                        Let’s paint the Haldi ceremony sunshine yellow! 🌞✨ It’s all about glowing vibes, so dress up in 
+                        <a href="https://in.pinterest.com/search/pins/?q=beautiful%20yellow%20traditional%20outfits&rs=typed">beautiful yellow outfits</a> – 
+                        think mustard, lemon, or golden hues. Let’s spread cheer, smiles, and a whole lot of vibrant magic!
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
+
 
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
     <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 
 </html>
