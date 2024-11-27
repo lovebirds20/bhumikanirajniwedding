@@ -732,3 +732,10 @@ li {
 		border-color: #874562 !important;
 		background-color: #874562 !important;
 	}
+
+.time {
+	font-size: 13px;
+	font-style: italic;
+	text-transform: lowercase;
+	color: #903942;
+}
